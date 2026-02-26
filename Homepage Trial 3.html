@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>杨洋 | Yang Yang</title>
+
+<style>
+body{
+    font-family: "Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;
+    margin:0;
+    background:#f5f7fa;
+    color:#333;
+}
+header{
+    background:#1e3a5f;
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+header h1{
+    margin:5px 0;
+}
+.lang-switch{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+button{
+    padding:6px 12px;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+    margin-left:5px;
+}
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:0 20px;
+}
+.section{
+    margin-bottom:40px;
+}
+h2{
+    border-left:4px solid #1e3a5f;
+    padding-left:10px;
+    color:#1e3a5f;
+}
+.profile{
+    text-align:center;
+    margin-top:-60px;
+}
+.profile img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:5px solid white;
+}
+ul{
+    padding-left:20px;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #ddd;
+    color:#777;
+}
+.hidden{
+    display:none;
+}
+</style>
+
+<script>
+function switchLang(lang){
+    const zh = document.querySelectorAll(".zh");
+    const en = document.querySelectorAll(".en");
+    if(lang==="zh"){
+        zh.forEach(el=>el.classList.remove("hidden"));
+        en.forEach(el=>el.classList.add("hidden"));
+    }else{
+        zh.forEach(el=>el.classList.add("hidden"));
+        en.forEach(el=>el.classList.remove("hidden"));
+    }
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<div class="lang-switch">
+<button onclick="switchLang('zh')">中文</button>
+<button onclick="switchLang('en')">English</button>
+</div>
+<h1>杨洋 | Yang Yang</h1>
+<p class="zh">北京师范大学 教育科技中心 副教授</p>
+<p class="en hidden">Associate Professor, Center for Educational Science and Technology, Beijing Normal University</p>
+</header>
+
+<div class="profile">
+<img src="avatar.jpg" alt="Yang Yang">
+</div>
+
+<div class="container">
+
+<div class="section">
+<h2 class="zh">个人简介</h2>
+<h2 class="en hidden">Biography</h2>
+
+<p class="zh">
+杨洋，北京师范大学教育科技中心副教授。研究方向包括科学/STEM教育、
+教育测量与评价。当前重点关注生成式人工智能辅助的科学教学与学习、
+在线科学探究平台设计、大规模科学测评以及非正式科学学习。
+</p>
+
+<p class="en hidden">
+Dr. Yang Yang is an Associate Professor at Beijing Normal University.
+His research areas include Science/STEM Education and Educational Measurement.
+His current research focuses on GenAI-assisted science teaching and learning,
+online science inquiry platforms, large-scale science assessment,
+and informal science learning.
+</p>
+</div>
+
+
+<div class="section">
+<h2 class="zh">教育背景</h2>
+<h2 class="en hidden">Education</h2>
+
+<ul class="zh">
+<li>博士，课程、教学与学习科学，纽约州立大学布法罗分校（2017）</li>
+<li>硕士，高分子材料，谢菲尔德大学（2009）</li>
+<li>学士，应用化学，青岛科技大学（2006）</li>
+</ul>
+
+<ul class="en hidden">
+<li>Ph.D., Curriculum, Instruction and the Science of Learning, University at Buffalo, 2017</li>
+<li>M.S., Polymer for Advanced Technology, University of Sheffield, 2009</li>
+<li>B.S., Applied Chemistry, Qingdao University of Science and Technology, 2006</li>
+</ul>
+</div>
+
+
+<div class="section">
+<h2 class="zh">研究方向</h2>
+<h2 class="en hidden">Research Interests</h2>
+
+<ul>
+<li>GenAI-assisted Science Teaching and Learning</li>
+<li>Online Science Inquiry Platform Design</li>
+<li>Large-scale Science Assessment</li>
+<li>Educational Measurement and Evaluation</li>
+<li>Informal Science Learning</li>
+</ul>
+</div>
+
+
+<div class="section">
+<h2 class="zh">代表著作</h2>
+<h2 class="en hidden">Selected Publications</h2>
+
+<ul>
+<li>Yang, Y., & Wang, B. (2025). A step-by-step guide for social science research.</li>
+<li>Yang, Y., Liu, X., & Gardella, J. (2020). Effects of a professional development program... JRST.</li>
+<li>Zheng, Y., Sun, S., Yang, Y., & Xu, C. (2024). Research in Science Education.</li>
+</ul>
+</div>
+
+
+<div class="section">
+<h2 class="zh">学术服务</h2>
+<h2 class="en hidden">Academic Service</h2>
+
+<ul>
+<li>Editorial Board Member, Journal of Research in Science Teaching</li>
+<li>NARST Strand 12 Coordinator</li>
+<li>Peer Reviewer for multiple international journals</li>
+</ul>
+</div>
+
+
+<div class="section">
+<h2 class="zh">联系方式</h2>
+<h2 class="en hidden">Contact</h2>
+
+<p>
+Email: yyang@bnu.edu.cn<br>
+Address: Zhuhai, Guangdong, China
+</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Yang Yang
+</footer>
+
+</body>
+</html>
