@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>杨洋 | 个人学术主页</title>
+
+<style>
+body {
+    font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fb;
+    color: #333;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 80px 20px;
+}
+
+.language-switch {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.language-switch button {
+    background: white;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.profile-wrapper {
+    text-align: center;
+    margin-top: -80px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+    object-position: center 25%;
+    background-color: white;
+}
+
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+h2 {
+    color: #1e3a5f;
+    border-left: 4px solid #1e3a5f;
+    padding-left: 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+    border-top: 1px solid #ddd;
+}
+
+a {
+    color: #1e3a5f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.lang-en { display: none; }
+</style>
+
+<script>
+function switchLanguage(lang) {
+    if (lang === 'en') {
+        document.querySelectorAll('.lang-cn').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'block');
+    } else {
+        document.querySelectorAll('.lang-cn').forEach(el => el.style.display = 'block');
+        document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+    }
+}
+</script>
+
+</head>
+<body>
+
+<header>
+<div class="language-switch">
+    <button onclick="switchLanguage('cn')">中文</button>
+    <button onclick="switchLanguage('en')">English</button>
+</div>
+
+<h1>杨洋</h1>
+<p class="lang-cn">北京师范大学 教育科学与技术研究中心 副教授</p>
+<p class="lang-en">Associate Professor, Center for Educational Science and Technology, Beijing Normal University</p>
+</header>
+
+<div class="profile-wrapper">
+<img src="avatar.jpg" alt="杨洋照片" class="profile-img">
+</div>
+
+<div class="container">
+
+<!-- 个人简介 -->
+<div class="section">
+<h2 class="lang-cn">个人简介</h2>
+<h2 class="lang-en">Biography</h2>
+
+<p class="lang-cn">
+杨洋博士，北京师范大学教育科学与技术研究中心副教授。
+研究领域包括科学/STEM教育以及教育测量与评价。
+当前研究重点包括生成式人工智能辅助科学教学与学习、
+在线科学探究平台的设计与实施、大规模科学评估以及非正式科学学习。
+此外，拥有五年A-level/GCSE物理与统计学一线教学与管理经验。
+自2013年以来，以数据分析专家、课程设计专家或项目评估专家身份参与20余项研究项目。
+在教学方面，开设并教授多门本科与研究生课程，包括《学术阅读与写作》、
+《教育测量与评价》、《社会科学研究方法》以及《非正式科学教育》等。
+</p>
+
+<p class="lang-en">
+Dr. Yang Yang is an Associate Professor at the Center for Educational Science and Technology, Beijing Normal University. 
+His research areas include Science/STEM education and Educational Measurement and Evaluation. 
+His current research focuses on GenAI-assisted Science Teaching and Learning, the Design and Implementation of Online Science Inquiry Platforms, 
+Large-scale Science Assessment, and Informal Science Learning. In addition, he has five years of frontline teaching and management experience 
+in A-level/GCSE Physics and Statistics. Since 2013, he has participated in over 20 research projects in the capacity of data analysis expert, 
+curriculum design specialist, or project evaluation expert. In terms of teaching, he has designed and taught multiple undergraduate and graduate courses, 
+such as Academic Reading and Writing, Educational Measurement and Evaluation, Research Methods in the Social Sciences, and Informal Science Education.
+</p>
+</div>
+
+<!-- 教育 -->
+<div class="section">
+<h2>EDUCATION</h2>
+<ul>
+<li>Ph.D. Curriculum, Instruction, and the Science of Learning, University at Buffalo, SUNY, USA, 2017</li>
+<li>M.S. Polymer for Advanced Technology, The University of Sheffield, UK, 2009</li>
+<li>B.S. Applied Chemistry, Qingdao University of Science and Technology, China, 2006</li>
+</ul>
+</div>
+
+<!-- 发表 -->
+<div class="section">
+<h2 class="lang-cn">代表性著作与论文</h2>
+<h2 class="lang-en">Publications</h2>
+<ul>
+<li>Yang, Y., & Wang, B. (2025). A step-by-step guide for social science research: From reading to writing. Intellectual Property Publishing House. (In Chinese)</li>
+<li>Wang, J., & Yang, Y. (2025). Science Curriculum and Textbook Analysis. China Science Publishing & Media. (In Chinese)</li>
+<li>Fu, Q., Li, S., & Yang, Y. (2024). Quantitative methods in education research: Best practices based on Jamovi. Jiangxi Education Publishing House. (In Chinese)</li>
+<li>Yang Y., Zhang Z., Zhou W., Liu Y., Wu Y., Ou Q., Wang B. (2025). A Systematic Review of Educational Research in Chinese Academic Journals from 2012-2021. AERA Annual Conference. Denver, CO.</li>
+<li>Yang, Y., Su, M., & Liu, R. (2022). Multivariate multilevel analysis and multilevel SEM. In Methodology for Multilevel Modeling in Educational Research. Springer.</li>
+<li>Yang, Y., Liu, K., Li, M., & Li, S. (2022). Emergency remote teaching during COVID-19. Journal of Research on Technology in Education, 54(sup1), S148–S164.</li>
+<li>Yang, Y., Liu, X., & Gardella, J. A. (2020). Professional development and interdisciplinary science learning. Journal of Research in Science Teaching, 57(7), 1028–1057.</li>
+</ul>
+</div>
+
+<!-- 学术服务 -->
+<div class="section">
+<h2>SERVICE & CONSULTING</h2>
+<ul>
+<li>Editorial Board Member, Journal of Research in Science Teaching (2023–2026)</li>
+<li>Coordinator, Strand 12: Technology for Teaching, Learning, and Research, NARST (2023–2025)</li>
+</ul>
+</div>
+
+<!-- 联系方式 -->
+<div class="section">
+<h2 class="lang-cn">联系方式</h2>
+<h2 class="lang-en">Contact</h2>
+<p>
+📧 <a href="mailto:yyang@bnu.edu.cn">yyang@bnu.edu.cn</a><br>
+🏫 Beijing Normal University
+</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 Yang Yang | Beijing Normal University
+</footer>
+
+</body>
+</html>
