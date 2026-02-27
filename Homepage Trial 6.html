@@ -23,7 +23,7 @@
             height: 160px;
             border-radius: 50%;
             border: 6px solid white;
-            margin-top: -60px; /* 头像下移，显示更多正脸和发型 */
+            margin-top: -40px; /* 头像下移更多 */
             background-color: white;
             object-fit: cover;
         }
@@ -61,6 +61,26 @@
             margin-top: 15px;
             font-size: 1.1em;
         }
+        .lang-toggle {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .lang-toggle button {
+            padding: 6px 12px;
+            margin: 0 5px;
+            font-size: 0.95em;
+            cursor: pointer;
+            background-color: #1e3a5f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        .lang-toggle button:hover {
+            background-color: #3a5f8f;
+        }
+        .lang {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -75,87 +95,156 @@
     <img src="avatar.jpg" alt="杨洋照片" class="profile-img">
 </div>
 
+<!-- 语言切换按钮 -->
+<div class="lang-toggle">
+    <button onclick="showLang('cn')">中文</button>
+    <button onclick="showLang('en')">English</button>
+</div>
+
 <div class="container">
 
-    <!-- 个人简介 -->
-    <div class="section">
-        <h2>个人简介</h2>
-        <p>
-            杨洋，北京师范大学人文和社会科学高等研究院副教授，
-            课程、教学与学习科学（STEM教育方向）博士。
-            长期致力于K-12 STEM课程与活动设计、科技场馆学习空间设计、
-            人工智能辅助的在线科学探究平台开发以及STEM测评与学习分析研究。
-        </p>
-        <p>
-            研究领域包括科学/STEM教育以及教育测量与评价。
-            当前研究重点包括生成式人工智能辅助科学教学与学习、
-            在线科学探究平台的设计与实施、大规模科学评估以及非正式科学学习。
-            拥有五年A-level/GCSE物理与统计学一线教学与管理经验。
-            自2013年以来，以数据分析专家、课程设计专家或项目评估专家身份参与20余项研究项目。
-        </p>
+    <!-- 中文内容 -->
+    <div class="lang" id="cn">
+        <div class="section">
+            <h2>个人简介</h2>
+            <p>
+                杨洋，北京师范大学人文和社会科学高等研究院副教授，
+                课程、教学与学习科学（STEM教育方向）博士。
+                长期致力于K-12 STEM课程与活动设计、科技场馆学习空间设计、
+                人工智能辅助的在线科学探究平台开发以及STEM测评与学习分析研究。
+            </p>
+            <p>
+                研究领域包括科学/STEM教育以及教育测量与评价。
+                当前研究重点包括生成式人工智能辅助科学教学与学习、
+                在线科学探究平台的设计与实施、大规模科学评估以及非正式科学学习。
+                拥有五年A-level/GCSE物理与统计学一线教学与管理经验。
+                自2013年以来，以数据分析专家、课程设计专家或项目评估专家身份参与20余项研究项目。
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>研究与实践领域</h2>
+            <ul>
+                <li>K-12 STEM课程与活动设计</li>
+                <li>科技场馆学习空间设计</li>
+                <li>人工智能辅助的在线科学探究平台设计</li>
+                <li>STEM测评开发</li>
+                <li>学习分析（Learning Analytics）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>教育背景</h2>
+            <ul>
+                <li>2013–2017 博士，课程、教学与学习科学，纽约州立大学布法罗分校，美国</li>
+                <li>2007–2009 硕士，高分子材料，谢菲尔德大学，英国</li>
+                <li>2002–2006 学士，应用化学，青岛科技大学，中国</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>代表性著作与论文</h2>
+            <ul>
+                <li>杨洋, 张宗芳, 周王紫嫣, 刘羽茹, 吴苡欣, 欧倩儿, 李思琦. (2024). 我国教育实证研究十年发展趋势[J]. 创新教育研究, 12(2), 717-729.</li>
+                <li>杨洋 和 王不一 (2025). 《从阅读写作到AI赋能——社会科学研究的每一步》. 知识产权出版社.</li>
+                <li>王晶莹 和 杨洋 (2025). 《科学课程标准和教材分析》. 中国科技出版社.</li>
+                <li>傅骞, 李思琦 和 杨洋. (2024). 《教育量化研究：基于Jamovi的最佳实践》. 江西教育出版社.</li>
+                <li>Yang, Y., Zhang, Z., Zhou, W., Liu, Y., Wu, Y., Ou, Q., & Wang, B. (2025). A Systematic Review of Educational Research in Chinese Academic Journals from 2012-2021. AERA.</li>
+                <li>Yang, Y., Su, M., & Liu, R. (2022). Multilevel Modeling in Educational Research. Springer.</li>
+                <li>Yang, Y., Liu, K., Li, M., & Li, S. (2022). Emergency Remote Teaching Study. JRTE.</li>
+                <li>Yang, Y., Liu, X., & Gardella, J. A. (2020). Professional Development in Science Education. JRST.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>学术服务</h2>
+            <ul>
+                <li>《Journal of Research in Science Teaching》编委（2023–2026）</li>
+                <li>NARST 第12分会（教学、学习与研究技术）协调人（2023–2025）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>联系方式</h2>
+            <p>
+                📧 电子邮箱：<a href="mailto:yyang@bnu.edu.cn">yyang@bnu.edu.cn</a><br>
+                🏫 单位：北京师范大学 人文和社会科学高等研究院
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>教育理念</h2>
+            <p class="motto">
+                “让学习回归真实，让教育回归本质”
+            </p>
+        </div>
     </div>
 
-    <!-- 研究与实践领域 -->
-    <div class="section">
-        <h2>研究与实践领域</h2>
-        <ul>
-            <li>K-12 STEM课程与活动设计</li>
-            <li>科技场馆学习空间设计</li>
-            <li>人工智能辅助的在线科学探究平台设计</li>
-            <li>STEM测评开发</li>
-            <li>学习分析（Learning Analytics）</li>
-        </ul>
-    </div>
+    <!-- 英文内容 -->
+    <div class="lang" id="en">
+        <div class="section">
+            <h2>About Dr. Yang Yang</h2>
+            <p>
+                Dr. Yang Yang is an Associate Professor at the Center for Educational Science and Technology, Beijing Normal University.
+                His research areas include Science/STEM education and Educational Measurement and Evaluation.
+                His current research focuses on GenAI-assisted Science Teaching and Learning, the Design and Implementation of Online Science Inquiry Platforms, Large-scale Science Assessment, and Informal Science Learning.
+                He has five years of frontline teaching and management experience in A-level/GCSE Physics and Statistics.
+                Since 2013, he has participated in over 20 research projects as a data analysis expert, curriculum design specialist, or project evaluation expert.
+            </p>
+        </div>
 
-    <!-- 教育背景 -->
-    <div class="section">
-        <h2>教育背景</h2>
-        <ul>
-            <li>2013–2017 博士，课程、教学与学习科学，纽约州立大学布法罗分校，美国</li>
-            <li>2007–2009 硕士，高分子材料，谢菲尔德大学，英国</li>
-            <li>2002–2006 学士，应用化学，青岛科技大学，中国</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Research & Practice</h2>
+            <ul>
+                <li>K-12 STEM curriculum and activity design</li>
+                <li>Design of learning spaces in science centers</li>
+                <li>GenAI-assisted online science inquiry platform design</li>
+                <li>STEM assessment development</li>
+                <li>Learning analytics</li>
+            </ul>
+        </div>
 
-    <!-- 代表性著作与论文 -->
-    <div class="section">
-        <h2>代表性著作与论文</h2>
-        <ul>
-            <li>杨洋, 张宗芳, 周王紫嫣, 刘羽茹, 吴苡欣, 欧倩儿, 李思琦. (2024). 我国教育实证研究十年发展趋势[J]. 创新教育研究, 12(2), 717-729.</li>
-            <li>杨洋 和 王不一 (2025). 《从阅读写作到AI赋能——社会科学研究的每一步》. 知识产权出版社.</li>
-            <li>王晶莹 和 杨洋 (2025). 《科学课程标准和教材分析》. 中国科技出版社.</li>
-            <li>傅骞, 李思琦 和 杨洋. (2024). 《教育量化研究：基于Jamovi的最佳实践》. 江西教育出版社.</li>
-            <li>Yang, Y., Zhang, Z., Zhou, W., Liu, Y., Wu, Y., Ou, Q., & Wang, B. (2025). A Systematic Review of Educational Research in Chinese Academic Journals from 2012-2021. AERA.</li>
-            <li>Yang, Y., Su, M., & Liu, R. (2022). Multilevel Modeling in Educational Research. Springer.</li>
-            <li>Yang, Y., Liu, K., Li, M., & Li, S. (2022). Emergency Remote Teaching Study. JRTE.</li>
-            <li>Yang, Y., Liu, X., & Gardella, J. A. (2020). Professional Development in Science Education. JRST.</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>Ph.D. Curriculum, Instruction, and the Science of Learning, University at Buffalo, SUNY, USA, 2017</li>
+                <li>M.S. Polymer for Advanced Technology, The University of Sheffield, UK, 2009</li>
+                <li>B.S. Applied Chemistry, Qingdao University of Science and Technology, China, 2006</li>
+            </ul>
+        </div>
 
-    <!-- 学术服务 -->
-    <div class="section">
-        <h2>学术服务</h2>
-        <ul>
-            <li>《Journal of Research in Science Teaching》编委（2023–2026）</li>
-            <li>NARST 第12分会（教学、学习与研究技术）协调人（2023–2025）</li>
-        </ul>
-    </div>
+        <div class="section">
+            <h2>Selected Publications</h2>
+            <ul>
+                <li>Yang, Y., Zhang, Z., Zhou, W., Liu, Y., Wu, Y., Ou, Q., & Wang, B. (2025). A Systematic Review of Educational Research in Chinese Academic Journals from 2012-2021. AERA.</li>
+                <li>Yang, Y., Su, M., & Liu, R. (2022). Multilevel Modeling in Educational Research. Springer.</li>
+                <li>Yang, Y., Liu, K., Li, M., & Li, S. (2022). Emergency Remote Teaching Study. JRTE.</li>
+                <li>Yang, Y., Liu, X., & Gardella, J. A. (2020). Professional Development in Science Education. JRST.</li>
+            </ul>
+        </div>
 
-    <!-- 联系方式 -->
-    <div class="section">
-        <h2>联系方式</h2>
-        <p>
-            📧 电子邮箱：<a href="mailto:yyang@bnu.edu.cn">yyang@bnu.edu.cn</a><br>
-            🏫 单位：北京师范大学 人文和社会科学高等研究院
-        </p>
-    </div>
+        <div class="section">
+            <h2>Service & Consulting</h2>
+            <ul>
+                <li>Editorial Board Member, Journal of Research in Science Teaching (2023–2026)</li>
+                <li>Coordinator, Strand 12: Technology for Teaching, Learning, and Research, NARST (2023–2025)</li>
+            </ul>
+        </div>
 
-    <!-- 教育理念 -->
-    <div class="section">
-        <h2>教育理念</h2>
-        <p class="motto">
-            “让学习回归真实，让教育回归本质”
-        </p>
+        <div class="section">
+            <h2>Contact</h2>
+            <p>
+                📧 Email: <a href="mailto:yyang@bnu.edu.cn">yyang@bnu.edu.cn</a><br>
+                🏫 Institution: Center for Educational Science and Technology, Beijing Normal University
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Educational Philosophy</h2>
+            <p class="motto">
+                "Returning learning to reality, returning education to its essence"
+            </p>
+        </div>
     </div>
 
 </div>
@@ -163,6 +252,15 @@
 <footer>
     © 2026 杨洋 | 北京师范大学
 </footer>
+
+<script>
+    // 默认显示中文
+    showLang('cn');
+    function showLang(lang) {
+        document.getElementById('cn').style.display = lang === 'cn' ? 'block' : 'none';
+        document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    }
+</script>
 
 </body>
 </html>
